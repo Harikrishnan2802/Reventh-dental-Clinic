@@ -1,0 +1,138 @@
+/* Testimonials Section Styles */
+.testimonials-section {
+  padding: 100px 0;
+  background-color: var(--off-white);
+  position: relative;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+/* Card Styling */
+.testimonial-card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--light-gray);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue-light);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 80px;
+  color: var(--light-gray);
+  font-family: var(--font-display);
+  line-height: 1;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.stars {
+  color: var(--gold);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-style: italic;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.8;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 20px;
+}
+
+.patient-name {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+
+.service-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: var(--font-ui);
+  background: var(--light-gray);
+  color: var(--blue);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 60px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-box h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial-card {
+    padding: 30px;
+  }
+
+  .cta-box {
+    padding: 40px 20px;
+  }
+}

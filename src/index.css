@@ -1,0 +1,276 @@
+:root {
+  --navy: #0d2b4e;
+  --navy-light: #1a3a5c;
+  --blue: #1a6fc4;
+  --blue-light: #2e8bdc;
+  --cyan: #00c8e8;
+  --white: #ffffff;
+  --off-white: #f0f6ff;
+  --gray: #6b7a8d;
+  --light-gray: #e8f0f8;
+  --gold: #f0b429;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-ui: 'Space Grotesk', sans-serif;
+  --shadow-sm: 0 2px 12px rgba(13,43,78,0.08);
+  --shadow-md: 0 8px 32px rgba(13,43,78,0.14);
+  --shadow-lg: 0 20px 60px rgba(13,43,78,0.2);
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --radius: 16px;
+  --radius-lg: 28px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--navy);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection { background: var(--cyan); color: var(--navy); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--light-gray); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
+
+a { text-decoration: none; color: inherit; }
+
+img { max-width: 100%; }
+
+section { position: relative; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-tag {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.section-tag::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--cyan);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.section-title span {
+  color: var(--blue);
+  font-style: italic;
+}
+
+.section-sub {
+  font-size: 1.05rem;
+  color: var(--gray);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  box-shadow: 0 6px 24px rgba(26,111,196,0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(26,111,196,0.5); }
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary span { position: relative; }
+
+.btn-outline {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Tooth bubble animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes blob {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+}
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+  50% { transform: translateY(-30px) scale(1.05); opacity: 1; }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+
+/* Page Hero Banner Shared Styles */
+.page-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #0f3460 100%);
+  padding: 140px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(0,200,232,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(26,111,196,0.1) 0%, transparent 50%);
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  font-weight: 900;
+  position: relative;
+}
+
+.page-hero-title span { color: var(--cyan); font-style: italic; }
+
+.page-hero-sub {
+  color: rgba(255,255,255,0.7);
+  margin-top: 12px;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.page-hero-breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  position: relative;
+}
+
+.page-hero-breadcrumb a { color: var(--cyan); }
+.page-hero-breadcrumb .sep { color: rgba(255,255,255,0.3); }
+
+/* Floating teeth in hero */
+.floating-tooth {
+  position: absolute;
+  opacity: 0.06;
+  animation: float 4s ease-in-out infinite;
+  font-size: 60px;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+}
