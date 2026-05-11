@@ -9,6 +9,7 @@ import rootCanalImg from '../../assets/images/Root Canal.jpg';
 import cleaningImg from '../../assets/images/Scaling & Cleaning.jpg';
 import bracesImg from '../../assets/images/Ortho Braces.jpg';
 import crownsImg from '../../assets/images/Crowns & Bridges.jpg';
+import alignersImg from '../../assets/images/aligners.webp';
 
 function AnimatedSection({ children, className = '', delay = 0, onClick }) {
   const [visible, setVisible] = useState(false);
@@ -101,6 +102,17 @@ const services = [
     benefits: ['Natural-looking restorations', 'Protects weakened teeth', 'Restores full bite function', 'Durable porcelain/ceramic options'],
     duration: '60–90 min',
     sessions: '2',
+  },
+  {
+    id: 7, // New ID
+    image: alignersImg, 
+    color: '#00c8e8', // Alternating color pattern
+    title: 'Clear Aligners',
+    tagline: 'INVISIBLE TEETH STRAIGHTENING',
+    desc: 'Clear aligners are the modern, nearly invisible way to straighten your teeth without metal wires or brackets. They are removable, comfortable, and custom-made for your smile.',
+    benefits: ['Virtually invisible', 'Removable for eating & cleaning', 'No dietary restrictions', 'Custom 3D planned treatment'],
+    duration: '6–18 months',
+    sessions: '2 to 3',
   },
 ];
 
@@ -226,7 +238,7 @@ export default function Services() {
             </div>
             <div className="services-cta-actions">
               <Link to="/contact" className="btn-primary"><span><i className="fas fa-calendar-check"></i> Free Consultation</span></Link>
-              <a href="tel:+919444620131" className="btn-outline"><i className="fas fa-phone-alt"></i> Call Us</a>
+              <a href="tel:+919865879772" className="btn-outline"><i className="fas fa-phone-alt"></i> Call Us</a>
             </div>
           </AnimatedSection>
         </div>

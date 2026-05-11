@@ -36,7 +36,7 @@ const Contact = () => {
                   <div className="info-icon"><i className="fas fa-map-marker-alt"></i></div>
                   <div className="info-content">
                     <h4>Location</h4>
-                    <p>No: 3, Ezhaimarriamman koil street, Muthialpet, Puducherry, 605003</p>
+                    <p>No: 7, Ezhaimarriamman koil street, Solai Nagar, Muthialpet, Puducherry, 605003</p>
                   </div>
                 </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
                   <div className="info-icon"><i className="fas fa-phone-alt"></i></div>
                   <div className="info-content">
                     <h4>Phone & WhatsApp</h4>
-                    <p><a href="tel:+919444620131">+91 9444620131</a></p>
+                    <p><a href="tel:+919865879772">+91 9865879772</a></p>
                   </div>
                 </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div className="info-icon"><i className="fas fa-clock"></i></div>
                   <div className="info-content">
                     <h4>Working Hours</h4>
-                    <p>Mon–Sat: 9AM – 8PM <br/> Sun: 10AM – 2PM</p>
+                    <p>Mon–Sat: 24 Hours <br/> Sun: 9AM – 9PM</p>
                   </div>
                 </div>
               </div>
@@ -91,6 +91,7 @@ const Contact = () => {
                     <option>Dental Implants</option>
                     <option>Root Canal Treatment</option>
                     <option>Ortho Braces</option>
+                    <option>Clear Aligners</option>
                   </select>
                 </div>
                 <div className="form-group">

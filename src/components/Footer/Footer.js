@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="footer-col">
               <h4 className="footer-col-title">Our Services</h4>
               <ul className="footer-links">
-                {['Teeth Whitening', 'Dental Implants', 'Root Canal Treatment', 'Scaling & Cleaning', 'Ortho Braces', 'Crowns & Bridges'].map(s => (
+                {['Teeth Whitening', 'Dental Implants', 'Root Canal Treatment', 'Scaling & Cleaning', 'Ortho Braces', 'Crowns & Bridges','Clear Aligners'].map(s => (
                   <li key={s}><a href="/services"><i className="fas fa-chevron-right"></i>{s}</a></li>
                 ))}
               </ul>
@@ -63,11 +63,11 @@ export default function Footer() {
               <ul className="footer-contact-list">
                 <li>
                   <div className="contact-icon"><i className="fas fa-map-marker-alt"></i></div>
-                  <span>No: 3, Ezhaimarriamman koil street, Muthialpet, Puducherry, 605003</span>
+                  <span>No: 7, Ezhaimarriamman koil street, Solai Nagar, Muthialpet, Puducherry, 605003</span>
                 </li>
                 <li>
                   <div className="contact-icon"><i className="fas fa-phone-alt"></i></div>
-                  <a href="tel:+919444620131">+91 9444620131</a>
+                  <a href="tel:+919444620131">+91 9865879772</a>
                 </li>
                 <li>
                   <div className="contact-icon"><i className="fas fa-envelope"></i></div>
@@ -75,7 +75,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <div className="contact-icon"><i className="fas fa-clock"></i></div>
-                  <span>Mon–Sat: 9AM – 8PM<br/>Sun: 10AM – 2PM</span>
+                  <span>Mon–Sat: 24 Hours<br/>Sun: 9AM – 9PM</span>
                 </li>
               </ul>
             </div>

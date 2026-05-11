@@ -15,7 +15,7 @@ const Appointment = () => {
     e.preventDefault();
     
     // Clinic WhatsApp Number from business card
-    const phoneNumber = "919444620131"; 
+    const phoneNumber = "919865879772"; 
     
     // Constructing the professional message
     const message = `*New Appointment Request*%0A` +
@@ -80,6 +80,7 @@ const Appointment = () => {
                     <option>Teeth Whitening</option>
                     <option>Ortho Braces</option>
                     <option>Scaling & Cleaning</option>
+                    <option>Clear Aligners</option>
                     <option>General Checkup</option>
                   </select>
                 </div>

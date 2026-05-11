@@ -144,7 +144,7 @@ export default function Home() {
                 <div className="call-icon-wrap"><i className="fas fa-phone-alt"></i></div>
                 <div>
                   <div className="call-label">Call Us Now</div>
-                  <div className="call-num">9444620131</div>
+                  <div className="call-num">9865879772</div>
                 </div>
               </a>
             </div>
@@ -384,7 +384,7 @@ export default function Home() {
             </div>
             <div className="cta-actions">
               <Link to="/Appointment" className="btn-primary"><span>Book Appointment <i className="fas fa-calendar-check"></i></span></Link>
-              <a href="https://wa.me/919444620131" className="whatsapp-btn" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/919865879772" className="whatsapp-btn" target="_blank" rel="noreferrer">
                 <i className="fab fa-whatsapp"></i> Chat on WhatsApp
               </a>
             </div>
