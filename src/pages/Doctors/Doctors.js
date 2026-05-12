@@ -21,7 +21,7 @@ function AnimatedSection({ children, className = '', delay = 0 }) {
 const credentials = [
   { icon: 'fa-graduation-cap', label: 'BDS Degree', sub: 'Bachelor of Dental Surgery' },
   { icon: 'fa-certificate', label: 'Reg. No. 1394', sub: 'Licensed Dental Surgeon' },
-  { icon: 'fa-award', label: '10+ Years', sub: 'Clinical Experience' },
+  { icon: 'fa-award', label: '6 + Years', sub: 'Clinical Experience' },
   { icon: 'fa-microscope', label: 'Advanced Training', sub: 'Implantology & Orthodontics' },
 ];
 
@@ -105,7 +105,7 @@ export default function Doctors() {
     <div className="doctor-mini-stats">
 
       <div>
-        <span>10+</span>
+        <span>6+</span>
         <small>Years Exp.</small>
       </div>
 

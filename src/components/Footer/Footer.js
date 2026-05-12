@@ -25,7 +25,7 @@ export default function Footer() {
                 Providing world-class dental care in Puducherry with compassion, precision, and the latest technology.
               </p>
               <div className="footer-socials">
-                <a href="https://wa.me/919444620131" target="_blank" rel="noreferrer" className="social-btn whatsapp">
+                <a href="https://wa.me/9865879772" target="_blank" rel="noreferrer" className="social-btn whatsapp">
                   <i className="fab fa-whatsapp"></i>
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-btn fb">
@@ -67,7 +67,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <div className="contact-icon"><i className="fas fa-phone-alt"></i></div>
-                  <a href="tel:+919444620131">+91 9865879772</a>
+                  <a href="tel:+919865879772">+91 9865879772</a>
                 </li>
                 <li>
                   <div className="contact-icon"><i className="fas fa-envelope"></i></div>
